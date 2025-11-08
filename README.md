@@ -10,10 +10,12 @@
 
 ## ⭐ Популярные сниппеты
 
-- [Аккордеон](/javascript/ui-components/accordion.js) `#ui` `#jquery`
+<!-- - [Аккордеон](/javascript/ui-components/accordion.js) `#ui` `#jquery`
 - [Якорная навигация](/javascript/navigation/anchor-nav.js) `#nav` `#jquery`
 - [Адаптивные миксины](/scss/mixins/_responsive.scss) `#scss` `#responsive`
-- [Форма с валидацией](/javascript/forms/form-validation.js) `#form` `#validation`
+- [Форма с валидацией](/javascript/forms/form-validation.js) `#form` `#validation` -->
+
+- _[будут добавляться...]_
 
 ---
 
@@ -36,15 +38,18 @@
 
 - **Навигация** - `#nav`
 
-  - [`anchor-nav.js`](/javascript/navigation/anchor-nav.js) `#nav` `#jquery` `#smooth-scroll`
+  <!-- - [`anchor-nav.js`](/javascript/navigation/anchor-nav.js) `#nav` `#jquery` `#smooth-scroll`
     - Плавная навигация по якорям с автоподсветкой
   - [`sticky-nav.js`](/javascript/navigation/sticky-nav.js) `#nav` `#jquery` `#scroll`
-    - Липкое меню при скролле
+    - Липкое меню при скролле -->
+
+  - _[будут добавляться...]_
 
 - **UI Компоненты** - `#ui`
 
-  - [`accordion.js`](/javascript/ui-components/accordion.js) `#ui` `#jquery` `#accordion`
-    - Аккордеон с одиночным/множественным открытием
+  <!-- - [`accordion.js`](/javascript/ui-components/accordion.js) `#ui` `#jquery` `#accordion`
+    - Аккордеон с одиночным/множественным открытием -->
+
   - _[будут добавляться...]_
 
 - **Формы** - `#form`
@@ -53,8 +58,8 @@
 ### 🎨 SCSS
 
 - **Миксины** - `#scss` `#mixins`
-  - [`_responsive.scss`](/scss/mixins/_responsive.scss) `#scss` `#responsive`
-    - Медиа-запросы и адаптивные помощники
+  <!-- - [`_responsive.scss`](/scss/mixins/_responsive.scss) `#scss` `#responsive`
+    - Медиа-запросы и адаптивные помощники -->
   - _[будут добавляться...]_
 
 ### 📝 Pug
@@ -65,7 +70,7 @@
 ### 👀 Демо
 
 - **Примеры использования** - `#demo`
-  - [`anchor-nav-demo.html`](/docs/navigation/anchor-nav-demo.html)
+  <!-- - [`anchor-nav-demo.html`](/docs/navigation/anchor-nav-demo.html) -->
   - _[будут добавляться...]_
 
 ## 🏷️ Управление версиями
