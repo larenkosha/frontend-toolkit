@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anchor Nav Demo</title>
+    <link rel="stylesheet" href="../../resources/css/style.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; }
-        
+        body .wrapper { overflow: hidden; }
         .demo-header {
             position: fixed;
+            width: 100vw;
             top: 0;
-            width: 100%;
+            left: 0;
             background: #2c3e50;
             color: white;
             padding: 15px;
@@ -18,6 +19,10 @@
             z-index: 1000;
             height: 60px;
             box-sizing: border-box;
+        }
+
+        .demo-header h4 {
+            color: white;
         }
         
         .anchors-links {
@@ -70,42 +75,44 @@
 </head>
 <body>
     <header class="demo-header">
-        <h1>Fixed Header (height: 60px)</h1>
+        <h4>Fixed Header (height: 60px)</h4>
     </header>
 
-    <nav class="anchors-links">
-        <h3>Навигация</h3>
-        <a class="anchor-link" href="#" data-anchor="section1">Section I - Definitions</a>
-        <a class="anchor-link" href="#" data-anchor="section2">Section II - Program Overview</a>
-        <a class="anchor-link" href="#" data-anchor="section3">Section III - Requirements</a>
-    </nav>
+    <div class="wrapper">
+        <nav class="anchors-links">
+            <h3>Навигация</h3>
+            <a class="anchor-link" href="#" data-anchor="section1">Section I - Definitions</a>
+            <a class="anchor-link" href="#" data-anchor="section2">Section II - Program Overview</a>
+            <a class="anchor-link" href="#" data-anchor="section3">Section III - Requirements</a>
+        </nav>
 
-    <section id="section1" class="content-section">
-        <h2>Section I - Definitions</h2>
-        <p>Содержимое секции 1. Прокручивайте страницу чтобы увидеть работу якорной навигации.</p>
-        <p>Активная ссылка автоматически подсвечивается при скролле.</p>
-    </section>
+        <section id="section1" class="content-section">
+            <h2>Section I - Definitions</h2>
+            <p>Содержимое секции 1. Прокручивайте страницу чтобы увидеть работу якорной навигации.</p>
+            <p>Активная ссылка автоматически подсвечивается при скролле.</p>
+        </section>
 
-    <section id="section2" class="content-section">
-        <h2>Section II - Program Overview</h2>
-        <p>Содержимое секции 2. Плагин автоматически учитывает высоту фиксированного хедера.</p>
-    </section>
+        <section id="section2" class="content-section">
+            <h2>Section II - Program Overview</h2>
+            <p>Содержимое секции 2. Плагин автоматически учитывает высоту фиксированного хедера.</p>
+        </section>
 
-    <section id="section3" class="content-section">
-        <h2>Section III - Requirements</h2>
-        <p>Содержимое секции 3. Кликните по ссылкам в навигации для плавной прокрутки.</p>
-    </section>
-
+        <section id="section3" class="content-section">
+            <h2>Section III - Requirements</h2>
+            <p>Содержимое секции 3. Кликните по ссылкам в навигации для плавной прокрутки.</p>
+        </section>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../../javascript/navigation/anchor-nav.js"></script>
     <script src="/frontend-toolkit/javascript/navigation/anchor-nav.js"></script>
-    <!-- <script src="/frontend-toolkit/javascript/navigation/anchor-nav.js"></script> -->
 
     <script>
         $(document).ready(function() {
             $('.anchors-links').anchorNav({
                 scrollSpeed: 800,
                 offset: '.demo-header',
-                extraOffset: 20,
+                extraOffset: 0,
                 highlightOnScroll: true,
                 activeClass: 'active'
             });

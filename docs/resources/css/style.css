@@ -1,0 +1,128 @@
+@import url('https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css');
+
+* , :after, :before{
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none !important;
+}
+
+html, 
+body {
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #30373b;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+
+    span, a, strong, b {
+        color: inherit;
+        font: inherit;
+    }
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+    padding-left: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    font-weight: 700 !important;
+}
+
+strong {
+    font-weight: 600 !important;
+}
+
+button,
+input {
+    border: none;
+    background-color: unset;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #000;
+    font: 400 16px/25px Arial, sans-serif;
+    padding: 20px; 
+    margin: 0 auto; 
+}
+
+body section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+    gap: 30px;
+}
+
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+.text-right { text-align: right !important; }
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+
+.justify-left, .justify-up, .justify-top { justify-content: flex-start !important; }
+.justify-center { justify-content: center !important; }
+.justify-right, .justify-down, .justify-bottom { justify-content: flex-end !important; }
+
+.align-top, .align-up, .align-left { align-items: flex-start !important; align-self: flex-start; }
+.align-center { align-items: center !important; align-self: center; }
+.align-bottom, .align-down, .align-right { align-items: flex-end !important; align-self: flex-end; }
+
+.self-top, .self-up, .self-left { align-self: flex-start !important; }
+.self-center, .self-middle { align-self: center !important; }
+.self-bottom, .self-down, .self-right { align-self: flex-end !important; }
+
+.text-strike { text-decoration: line-through; }
+.text-muted { color: #a1a1a1; }
+
+.hidden { display: none !important; }
+
+@media only screen and (min-width: 769px) {
+    .hidden-desctop,
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden-mobile,
+    .hide-mobile { 
+        display: none !important;
+    }
+}
+
+.overflow { overflow: hidden; }
+
+.flex-grow,
+.grow { flex-grow: 1; }
