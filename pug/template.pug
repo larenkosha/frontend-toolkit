@@ -1,0 +1,26 @@
+//-
+    [Название миксина]
+
+    [Описание что генерирует и для чего]
+
+    Параметры:
+        - paramName (Type) [default] - описание параметра
+        - anotherParam (Type) [default] - описание параметра
+
+    Пример использования:
+        +mixin-name(param='value')
+
+    Группа: [category]
+    Версия: 1.0.0
+    Автор: [Your Name]
+
+mixin mixin-name(paramName = 'default', anotherParam = true)
+    //- Логика миксина
+    .class-name(class=paramName)
+        if anotherParam
+            .nested-element Content
+        else
+            .alternative-element Alternative content
+
+        //- Блок для контента
+        block

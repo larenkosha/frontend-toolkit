@@ -1,0 +1,44 @@
+///
+/// [Название миксина]
+/// 
+/// [Описание что делает]
+///
+/// @param {Тип} $param-name [default-value] - описание параметра
+/// 
+/// @example scss  - Пример использования
+///   .selector {
+///     @include mixin-name(value);
+///   }
+/// 
+/// @example css - Результат компиляции  
+///   .selector {
+///     property: value;
+///   }
+///
+/// @group [category] - Группировка (helpers, typography, layout, etc.)
+/// @since [version] - Версия добавления
+/// @author [Your Name]
+///
+
+@mixin mixin-name($param-name: default-value) {
+    // Логика миксина
+    property: $param-name;
+    
+    @content; // Если поддерживает контент-блок
+}
+
+// scss/mixins/_responsive.scss
+
+/// Миксин для медиа-запросов
+/// @param {String} $breakpoint - breakpoint name
+/// @example scss
+///   @include respond-to('tablet') { ... }
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint #{$breakpoint} not found in $breakpoints map";
+  }
+}
