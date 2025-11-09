@@ -1,5 +1,6 @@
 /**
  * Scroll To Plugin
+ * #jquery #nav #smooth-scroll #scroll #scrollto #scrolltop
  * 
  * Универсальные одиночные ссылки для скролла в любом направлении
  * Использует smooth-scroll.js для плавного скролла
