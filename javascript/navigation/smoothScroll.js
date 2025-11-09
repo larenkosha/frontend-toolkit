@@ -1,6 +1,6 @@
 /**
  * Smooth Scroll Plugin
- * #jquery #nav #smoothscroll #smooth #scroll
+ * #jquery #nav #scroll #smooth  #smoothscroll #smoothScroll
  * 
  * Базовый модуль для плавного скролла к элементам или позициям
  * 

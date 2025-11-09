@@ -1,6 +1,6 @@
 /**
  * Anchor Navigation Plugin
- * #jquery #nav #smooth-scroll #anchors #scroll
+ * #jquery #nav #scroll #smooth-scroll #smoothScroll #anchors 
  * 
  * Плавная навигация по якорям с автоподсветкой для групп ссылок
  * Использует smooth-scroll.js как базовый модуль
