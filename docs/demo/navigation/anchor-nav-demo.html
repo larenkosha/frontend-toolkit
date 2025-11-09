@@ -54,6 +54,11 @@
             color: white;
             font-weight: bold;
         }
+
+        .top-top.active {
+            background: transparent;
+            color: black;
+        }
         
         .content-section {
             height: 100vh;
@@ -71,6 +76,13 @@
         #section1 { background: #f8f9fa; }
         #section2 { background: #e9ecef; }
         #section3 { background: #dee2e6; }
+
+        .to-top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
@@ -78,8 +90,8 @@
         <h4>Fixed Header (height: 60px)</h4>
     </header>
 
-    <div class="wrapper">
-        <nav class="anchors-links">
+    <div id="top" class="wrapper">
+        <nav class="anchors anchors-links">
             <h3>Навигация</h3>
             <a class="anchor-link" href="#" data-anchor="section1">Section I - Definitions</a>
             <a class="anchor-link" href="#" data-anchor="section2">Section II - Program Overview</a>
@@ -100,22 +112,22 @@
         <section id="section3" class="content-section">
             <h2>Section III - Requirements</h2>
             <p>Содержимое секции 3. Кликните по ссылкам в навигации для плавной прокрутки.</p>
+            <a class="scroll-top to-top" href="#" data-target="top">to-top</a>
         </section>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../../../javascript/navigation/anchor-nav.js"></script>
-    <script src="/frontend-toolkit/javascript/navigation/anchor-nav.js"></script>
+    <script src="../../../javascript/navigation/smooth-scroll.js"></script>
+    <script src="../../../javascript/navigation/anchors.js"></script>
+    <script src="../../../javascript/navigation/scroll-to.js"></script>
+    <script src="/frontend-toolkit/javascript/navigation/smooth-scroll.js"></script>
+    <script src="/frontend-toolkit/javascript/navigation/anchors.js"></script>
+    <script src="/frontend-toolkit/javascript/navigation/scroll-to.js"></script>
 
     <script>
         $(document).ready(function() {
-            $('.anchors-links').anchorNav({
-                scrollSpeed: 800,
-                offset: '.demo-header',
-                extraOffset: 0,
-                highlightOnScroll: true,
-                activeClass: 'active'
-            });
+            $('.anchors').anchors();
+            $('.scroll-top').scrollTo();
         });
     </script>
 </body>
